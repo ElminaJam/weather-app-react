@@ -9,7 +9,7 @@ export default function App() {
         <div className="background-image-container">
           <div className="row">
             <div className="col-7">
-              <Weather />
+              <Weather city="Rome" />
             </div>
             <div className="col-5">
               <button className="location-button">
@@ -18,7 +18,6 @@ export default function App() {
               </button>
             </div>
           </div>
-          <div className="weather-forecast" value="color: #261e01"></div>
           <small>
             Coded by
             <span role="img" aria-label="coder">
