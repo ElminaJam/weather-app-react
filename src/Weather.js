@@ -6,10 +6,8 @@ import "./Weather.css";
 export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
   const [city, setCity] = useState(props.city);
-  const [error, setError] = useState(null);
 
   function displayWeather(response) {
-    setError(null);
     setWeather({
       ready: true,
       date: new Date(response.data.dt * 1000),
@@ -23,14 +21,10 @@ export default function Weather(props) {
       city: response.data.name,
     });
   }
-  function handleError(err) {
-    console.error({ err });
-    setError("We could not retrieve the city information");
-  }
 
   function search() {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=27fb2f753cffa772c159b13a29aaa34d&units=metric`;
-    axios.get(apiUrl).then(displayWeather).catch(handleError);
+    axios.get(apiUrl).then(displayWeather);
   }
 
   function handleSubmit(event) {
