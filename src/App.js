@@ -22,7 +22,7 @@ export default function App() {
             </a>
             & is open-sourced on
             <a
-              href="https://github.com/ElminaJam/weather-app.git"
+              href="https://github.com/ElminaJam/weather-app-react"
               target="_blank"
               rel="noreferrer"
             >
