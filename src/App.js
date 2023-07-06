@@ -7,17 +7,7 @@ export default function App() {
     <div className="App">
       <div className="clearfix">
         <div className="background-image-container">
-          <div className="row">
-            <div className="col-7">
-              <Weather city="Rome" />
-            </div>
-            <div className="col-5">
-              <button className="location-button">
-                <i className="fa-solid fa-location-dot"></i>
-                Current location
-              </button>
-            </div>
-          </div>
+          <Weather city="Rome" />
           <small>
             Coded by
             <span role="img" aria-label="coder">
