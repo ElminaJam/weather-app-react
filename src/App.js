@@ -36,7 +36,7 @@ export default function App() {
               >
                 GitHub
               </a>{" "}
-              & hosted on
+              & hosted on{" "}
               <a
                 href="https://elmina-weather-app.netlify.app/"
                 target="_blank"
@@ -83,7 +83,7 @@ export default function App() {
               >
                 GitHub
               </a>{" "}
-              & hosted on
+              & hosted on{" "}
               <a
                 href="https://elmina-weather-app.netlify.app/"
                 target="_blank"
@@ -127,7 +127,7 @@ export default function App() {
               >
                 GitHub
               </a>{" "}
-              & hosted on
+              & hosted on{" "}
               <a
                 href="https://elmina-weather-app.netlify.app/"
                 target="_blank"
