@@ -51,7 +51,10 @@ export default function App() {
     );
   } else if (hour > 20 || hour < 5) {
     return (
-      <div className="App">
+      <div
+        className="App"
+        style={{ color: "#fff195", textShadow: "#000 0px 0px 5px" }}
+      >
         <div className="clearfix">
           <div
             className="background-image-container"

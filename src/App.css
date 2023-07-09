@@ -135,7 +135,7 @@ h1 {
   margin-top: 10px;
   font-size: 16px;
 }
-.units {
+.unit {
   font-weight: 700;
   font-size: 17px;
   position: relative;
@@ -149,7 +149,7 @@ h1 {
   font-size: 17px;
 }
 .WeatherForecast-temperature-min {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .WeatherForecast-temperature {
   font-size: 17px;
