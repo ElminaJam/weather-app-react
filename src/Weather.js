@@ -1,30 +1,32 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
-import "./Weather.css";
 
 export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
   const [city, setCity] = useState(props.city);
+  const [error, setError] = useState(null);
 
   function displayWeather(response) {
+    setError(null);
     setWeather({
       ready: true,
-      date: new Date(response.data.dt * 1000),
-      coordinates: response.data.coord,
-      temperature: response.data.main.temp,
-      feelsLike: response.data.main.feels_like,
+      date: new Date(response.data.time * 1000),
+      coordinates: response.data.coordinates,
+      temperature: response.data.temperature.current,
+      feelsLike: response.data.temperature.feels_like,
       wind: response.data.wind.speed,
-      humidity: response.data.main.humidity,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
-      description: response.data.weather[0].description,
-      city: response.data.name,
+      humidity: response.data.temperature.humidity,
+      icon: response.data.condition.icon_url,
+      description: response.data.condition.description,
+      city: response.data.city,
     });
   }
 
-  function search() {
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=27fb2f753cffa772c159b13a29aaa34d&units=metric`;
-    axios.get(apiUrl).then(displayWeather);
+  function handleError(err) {
+    console.error({ err });
+    setError("We could not retrieve the city information");
   }
 
   function handleSubmit(event) {
@@ -34,6 +36,11 @@ export default function Weather(props) {
 
   function updateCity(event) {
     setCity(event.target.value);
+  }
+
+  function search() {
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=231802987t6b86727b0cd8a49eao449f&units=metric`;
+    axios.get(apiUrl).then(displayWeather).catch(handleError);
   }
 
   if (weather.ready) {
@@ -65,6 +72,7 @@ export default function Weather(props) {
           </div>
         </div>
         <WeatherInfo data={weather} />
+        <WeatherForecast coordinates={weather.coordinates} />
       </div>
     );
   } else {
