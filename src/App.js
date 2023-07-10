@@ -28,6 +28,7 @@ export default function App() {
                 href="https://www.linkedin.com/in/elmina-jamal-7a87071a1"
                 target="_blank"
                 rel="noreferrer"
+                title="LinkedIn Profile"
               >
                 Elmina
               </a>{" "}
@@ -36,6 +37,7 @@ export default function App() {
                 href="https://github.com/ElminaJam/weather-app-react"
                 target="_blank"
                 rel="noreferrer"
+                title="GitHub Weather App"
               >
                 GitHub
               </a>{" "}
@@ -44,6 +46,7 @@ export default function App() {
                 href="https://elmina-weather-app-react.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
+                title="Netlify Weather App"
               >
                 Netlify
               </a>
@@ -75,6 +78,7 @@ export default function App() {
                 href="https://www.linkedin.com/in/elmina-jamal-7a87071a1"
                 target="_blank"
                 rel="noreferrer"
+                title="LinkedIn Profile"
               >
                 Elmina
               </a>{" "}
@@ -83,6 +87,7 @@ export default function App() {
                 href="https://github.com/ElminaJam/weather-app-react"
                 target="_blank"
                 rel="noreferrer"
+                title="GitHub Weather App"
               >
                 GitHub
               </a>{" "}
@@ -91,6 +96,7 @@ export default function App() {
                 href="https://elmina-weather-app-react.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
+                title="Netlify Weather App"
               >
                 Netlify
               </a>
@@ -119,6 +125,7 @@ export default function App() {
                 href="https://www.linkedin.com/in/elmina-jamal-7a87071a1"
                 target="_blank"
                 rel="noreferrer"
+                title="LinkedIn Profile"
               >
                 Elmina
               </a>{" "}
@@ -127,6 +134,7 @@ export default function App() {
                 href="https://github.com/ElminaJam/weather-app-react"
                 target="_blank"
                 rel="noreferrer"
+                title="GitHub Weather App"
               >
                 GitHub
               </a>{" "}
@@ -135,6 +143,7 @@ export default function App() {
                 href="https://elmina-weather-app-react.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
+                title="Netlify Weather App"
               >
                 Netlify
               </a>
