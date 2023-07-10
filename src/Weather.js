@@ -60,7 +60,10 @@ export default function Weather(props) {
             <form className="search-form" onSubmit={handleSubmit}>
               <div className="input-icon">
                 <button className="search-icon">
-                  <i className="fa-solid fa-magnifying-glass"></i>
+                  <i
+                    className="fa-solid fa-magnifying-glass"
+                    title="Type a city"
+                  ></i>
                 </button>
                 <input
                   className="search-form shadow-sm"
@@ -74,7 +77,11 @@ export default function Weather(props) {
             </form>
           </div>
           <div className="col-5 text-end">
-            <button className="location-button" onClick={getCurrentLocation}>
+            <button
+              className="location-button"
+              onClick={getCurrentLocation}
+              title="Your Location"
+            >
               <i className="fa-solid fa-location-dot"></i>
               Current location
             </button>
