@@ -1,5 +1,8 @@
 import React from "react";
 import Weather from "./Weather";
+import backgroundDay from "./images/day-sky.jpg";
+import backgroundDusk from "./images/dusk.jpg";
+import backgroundNight from "./images/night-sky.jpg";
 import "./App.css";
 
 export default function App() {
@@ -12,7 +15,7 @@ export default function App() {
           <div
             className="background-image-container"
             style={{
-              backgroundImage: `url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/044/original/dusk.jpg?1683561814")`,
+              backgroundImage: `url(${backgroundDusk})`,
             }}
           >
             <Weather city="Rome" />
@@ -38,7 +41,7 @@ export default function App() {
               </a>{" "}
               & hosted on{" "}
               <a
-                href="https://elmina-weather-app.netlify.app/"
+                href="https://elmina-weather-app-react.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -59,7 +62,7 @@ export default function App() {
           <div
             className="background-image-container"
             style={{
-              backgroundImage: `url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/045/original/night-sky.jpg?1683561828")`,
+              backgroundImage: `url(${backgroundNight})`,
             }}
           >
             <Weather city="Rome" />
@@ -85,7 +88,7 @@ export default function App() {
               </a>{" "}
               & hosted on{" "}
               <a
-                href="https://elmina-weather-app.netlify.app/"
+                href="https://elmina-weather-app-react.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -103,7 +106,7 @@ export default function App() {
           <div
             className="background-image-container"
             style={{
-              backgroundImage: `url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/487/original/day-sky.jpg?1683799470")`,
+              backgroundImage: `url(${backgroundDay})`,
             }}
           >
             <Weather city="Rome" />
@@ -129,7 +132,7 @@ export default function App() {
               </a>{" "}
               & hosted on{" "}
               <a
-                href="https://elmina-weather-app.netlify.app/"
+                href="https://elmina-weather-app-react.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >

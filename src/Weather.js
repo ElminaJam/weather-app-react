@@ -73,7 +73,7 @@ export default function Weather(props) {
               </div>
             </form>
           </div>
-          <div className="col-5">
+          <div className="col-5 text-end">
             <button className="location-button" onClick={getCurrentLocation}>
               <i className="fa-solid fa-location-dot"></i>
               Current location
