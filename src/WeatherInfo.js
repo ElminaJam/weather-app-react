@@ -17,7 +17,11 @@ export default function WeatherInfo(props) {
           </div>
         </div>
         <div className="col second ps-4">
-          <WeatherTemperature celsius={props.data.temperature} />
+          <WeatherTemperature
+            units={props.units}
+            setUnits={props.setUnits}
+            celsius={props.data.temperature}
+          />
           <div className="weather-info">
             <div>Feels like: {Math.round(props.data.feelsLike)}°C</div>
             <div> Humidity: {props.data.humidity}%</div>

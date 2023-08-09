@@ -6,6 +6,9 @@ export default function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
 
+  let units = props.units;
+  let setUnits = props.setUnits;
+
   useEffect(() => {
     setLoaded(false);
   }, [props.coordinates]);
@@ -31,7 +34,11 @@ export default function WeatherForecast(props) {
             if (index < 6) {
               return (
                 <div className="col" key={index}>
-                  <WeatherForecastDay data={dailyForecast} />
+                  <WeatherForecastDay
+                    data={dailyForecast}
+                    units={units}
+                    setUnits={setUnits}
+                  />
                 </div>
               );
             } else {
